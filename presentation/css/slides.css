@@ -1,0 +1,19 @@
+#title {
+    font-family: "Oswald", Verdana, serif;
+}
+#title h1 {
+    font-size: 185px;
+    font-weight: bold;
+    text-align: center;
+}
+#title p {
+    font-family: "Open Sans", georgia, serif;
+    text-align: right;
+/*    font-weight: bold;*/
+    line-height: 1.1em;
+    margin: 0.1em 0;
+    padding: 0;
+}
+.impress-on-title .footer {
+    opacity: 1;
+}
