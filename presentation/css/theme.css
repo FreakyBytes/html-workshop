@@ -60,6 +60,11 @@ ol { list-style: decimal outside; }
     font-weight: bold;
     text-align: center;
 }
+.title h2 {
+    font-size: 95px;
+    font-weight: bold;
+    text-align: center;
+}
 .title p {
     font-family: "Open Sans", georgia, serif;
     text-align: right;
