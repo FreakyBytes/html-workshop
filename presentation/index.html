@@ -151,7 +151,8 @@
     
 -->
 <div id="impress">
-    <div id="title" class="step" data-x="0" data-y="0">
+    <!-- Teaser -->
+    <div id="title" class="step title" data-x="-500" data-y="0">
         <h1>HTML</h1>
         <p>
             Martin Peters<br />
@@ -160,9 +161,90 @@
         </p>
     </div>
     
+    <div id="about" class="step slide" data-x="1000" data-y="0">
+        <h2>Ablauf</h2>
+        <q>
+            <ol>
+                <li>max. 30 min Vortrag</li>
+                <li>20 min Übung</li>
+                <li>10 min Pause</li>
+                <li><i>repeat.</i></li>
+            </ol>
+            <br />
+            <center><b>Immer Fragen!</b></center>
+        </q>
+    </div>
+    
+    <div id="topics" class="step slide" data-x="2000" data-y="0">
+        <h2>Agenda</h2>
+        <q>
+            <ul>
+                <li>Tools</li>
+                <li>HTML & friends</li>
+                <li>Das Box-Modell</li>
+                <li>Magie mit jQuery</li>
+                <li>Warum das Rad neu erfinden?</li>
+                <li><i>One page to rule them all.</i></li>
+            </ul>
+        </q>
+    </div>
+    
+    <!-- Tools -->
+    <div id="tools-title" class="step title" data-x="-500" data-y="2000">
+        <h1>Tools</h1>
+    </div>
+    
+    <div id="tools-wysiwyg" class="step img-slide" data-x="1000" data-y="2000" data-rotate="90">
+        <img src="img/types_of_editors.png" alt="WYSIWYG" width="900" />
+        <a href="http://www.xkcd.com/1341/">http://www.xkcd.com/1341</a>
+    </div>
+    
+    <div id="tools-edit" class="step slide" data-x="2000" data-y="2000">
+        <h2>Der Editor</h2>
+        <q>
+            <b>Texteditoren mit UTF-8 Support:</b>
+            z.B.<i> vim, gedit, Notepad++</i><br />
+            <b>IDEs:</b>
+            z.B.<i> eclipse, IntelliJ, Aptana</i><br />
+            <b>Online Tools</b>
+            z.B.<i>jsFiddle.net></i>
+<!--            <ul>-->
+<!--                <li><b>Texteditor mit UTF-8 (!)</b><br />-->
+<!--                    (vim, gedit, Notepad++)-->
+<!--                </li>-->
+<!--                <li><b>IDEs</b><br />-->
+<!--                    (eclipse, IntelliJ, Aptana Studio)-->
+<!--                </li>-->
+<!--            </ul>-->
+        </q>
+    </div>
+    
+    <div id="tools-ref" class="step slide" data-x="3000" data-y="2000"> 
+        <h2>Die Referenzen</h2>
+        <q>
+            <ul>
+                <li><a href="http://www.w3schools.com">w3schools.com</a></li>
+                <li><a href="http://www.css4you.de">css4you.com</a></li>
+                <li><a href="http://de.selfhtml.org">selfHTML</a> (old but gold)</li>
+                <li><a href="http://www.stackoverflow.com">StackOverflow</a></li>
+                <li><a href="https://www.google.de/?q=Ehrlich%20du%20klickst%20auf%20einen%20Link%20zu%20Google?">Google</a></li>
+        </q>
+    </div>
+    
+    <div id="tools-style" class="step img-slide" data-x="4000" data-y="2000" data-rotate="90">
+        <img src="img/code_quality.png" alt="Code Quality" width="900" />
+        <a href="http://xkcd.com/1513/">http://xkcd.com/1513</a>
+    </div>
+    
+    <div id="tools-browser" class="step slide" data-x="5000" data-y="2000">
+        <h2>Die Testumgebung</h2>
+        <q>
+            <center>Jeder moderne Browser.<br />Außer Internet Explorer.</center>
+        </q>
+    </div>
+    
     <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
     </div>
-
 </div>
 
 <!--
@@ -198,94 +280,8 @@ if ("ontouchstart" in document.documentElement) {
 }
 </script>
 
-<!--
-    
-    Last, but not least.
-    
-    To make all described above really work, you need to include impress.js in the page.
-    I strongly encourage to minify it first.
-    
-    In here I just include full source of the script to make it more readable.
-    
-    You also need to call a `impress().init()` function to initialize impress.js presentation.
-    And you should do it in the end of your document. Not only because it's a good practice, but also
-    because it should be done when the whole document is ready.
-    Of course you can wrap it in any kind of "DOM ready" event, but I was too lazy to do so ;)
-    
--->
 <script src="js/impress.js"></script>
 <script>impress().init();</script>
-
-<!--
-    
-    The `impress()` function also gives you access to the API that controls the presentation.
-    
-    Just store the result of the call:
-    
-        var api = impress();
-    
-    and you will get three functions you can call:
-    
-        `api.init()` - initializes the presentation,
-        `api.next()` - moves to next step of the presentation,
-        `api.prev()` - moves to previous step of the presentation,
-        `api.goto( idx | id | element, [duration] )` - moves the presentation to the step given by its index number
-                id or the DOM element; second parameter can be used to define duration of the transition in ms,
-                but it's optional - if not provided default transition duration for the presentation will be used.
-    
-    You can also simply call `impress()` again to get the API, so `impress().next()` is also allowed.
-    Don't worry, it wont initialize the presentation again.
-    
-    For some example uses of this API check the last part of the source of impress.js where the API
-    is used in event handlers.
-    
--->
-
 </body>
 </html>
-
-<!--
-    
-    Now you know more or less everything you need to build your first impress.js presentation, but before
-    you start...
-    
-    Oh, you've already cloned the code from GitHub?
-    
-    You have it open in text editor?
-    
-    Stop right there!
-    
-    That's not how you create awesome presentations. This is only a code. Implementation of the idea that
-    first needs to grow in your mind.
-    
-    So if you want to build great presentation take a pencil and piece of paper. And turn off the computer.
-    
-    Sketch, draw and write. Brainstorm your ideas on a paper. Try to build a mind-map of what you'd like
-    to present. It will get you closer and closer to the layout you'll build later with impress.js.
-    
-    Get back to the code only when you have your presentation ready on a paper. It doesn't make sense to do
-    it earlier, because you'll only waste your time fighting with positioning of useless points.
-    
-    If you think I'm crazy, please put your hands on a book called "Presentation Zen". It's all about 
-    creating awesome and engaging presentations.
-    
-    Think about it. 'Cause impress.js may not help you, if you have nothing interesting to say.
-    
--->
-
-<!--
-    
-    Are you still reading this?
-    
-    For real?
-    
-    I'm impressed! Feel free to let me know that you got that far (I'm @bartaz on Twitter), 'cause I'd like
-    to congratulate you personally :)
-    
-    But you don't have to do it now. Take my advice and take some time off. Make yourself a cup of coffee, tea,
-    or anything you like to drink. And raise a glass for me ;)
-    
-    Cheers!
-    
--->
 

@@ -167,8 +167,8 @@ body     { pointer-events: none; }
 
     text-align: right;
     vertical-align: middle;
-
-    /* background-color: black;*/
+    
+    z-index: 99999;
 }
 
 /* IMPRESS NOT SUPPORTED STYLES */

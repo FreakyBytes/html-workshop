@@ -1,3 +1,22 @@
+h1, h2, h3, h4 {
+    font-family: "Oswald", Verdana, serif;
+    font-weight: bold;
+    line-height: 1.1em;
+    margin: 0.2em;
+}
+h1 { font-size: 80px; }
+h2 { font-size: 60px; }
+h3 { font-size: 40px; }
+h4 { font-size: 30px; }
+
+ul, ol {
+    padding-left: 1.2em;
+    line-height: 1.1em;
+    margin: 0.2em 0;
+}
+ul { list-style: disc outside; }
+ol { list-style: decimal outside; }
+
 .slide {
     display: block;
 
@@ -34,4 +53,28 @@
 
 .slide q strong {
     white-space: nowrap;
+}
+
+.title h1 {
+    font-size: 185px;
+    font-weight: bold;
+    text-align: center;
+}
+.title p {
+    font-family: "Open Sans", georgia, serif;
+    text-align: right;
+/*    font-weight: bold;*/
+    line-height: 1.1em;
+    margin: 0.1em 0;
+    padding: 0;
+}
+
+.img-slide {
+    text-align: center;
+}
+.img-slide img {
+    margin: auto;
+}
+.img-slide a {
+    font-size: 14px;
 }
