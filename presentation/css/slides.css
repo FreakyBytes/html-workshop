@@ -7,3 +7,36 @@
     background-position: center center;
     background-size: contain;
 }
+
+#html-friends {
+    background-image: url('../img/html-friends.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    height: 800px;
+}
+#html-friends:not(.active) {
+    opacity: 0;
+}
+.impress-on-html-friends #html-title {
+    opacity: 1;
+}
+
+#html-code.future {
+    opacity: 0;
+}
+
+
+/* overview step */
+
+#overview {
+    z-index: -1;
+    padding: 0;
+}
+
+/* on overview step everything is visible */
+
+.impress-on-overview .step {
+    opacity: 1;
+    cursor: pointer;
+}
