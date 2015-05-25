@@ -17,6 +17,9 @@ ul, ol {
 ul { list-style: disc outside; }
 ol { list-style: decimal outside; }
 
+small, span.small {
+    font-size: 0.5em;
+}
 .slide {
     display: block;
 
