@@ -83,3 +83,21 @@ ol { list-style: decimal outside; }
 .img-slide a {
     font-size: 14px;
 }
+
+.code-slide {
+}
+pre.prettyprint {
+    border: none !important;
+    text-align: left;
+}
+ol.linenums {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+/*.prettyprint {*/
+/*    background: #000;*/
+/*}*/
+li.L0, li.L1, li.L2, li.L3, li.L4, li.L5, li.L6, li.L7, li.L8, li.L9 {
+    color: #555;
+    list-style-type: decimal !important;
+}
