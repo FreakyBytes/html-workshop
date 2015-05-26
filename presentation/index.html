@@ -281,6 +281,7 @@
                 <li>Inline Tags und Links</li>
                 <li>Box Tags</li>
                 <li>Formulare und -elemente</li>
+                <li>Sonderzeichen</li>
             </ul>
         </q>
     </div>
@@ -349,7 +350,41 @@
 &lt;footer&gt;Der Fußbereich&lt;/footer&gt;
 </pre>
         </q>
-        
+    </div>
+    
+    <div id="html-forms" class="step slide" data-x="7000" data-y="3000" data-rotate="0">
+        <h2>Formulare</h2>
+            <form action="#html-form" method="GET">
+                <input type="text" name="txt" placeholder="Hello World" />
+                <input type="checkbox" name="chk" checked="checked" />
+                <select name="combo">
+                    <option value="1">Eins</option>
+                    <option value="2">Zwei</option>
+                </select><br />
+                <input id="radio1" type="radio" name="test" />
+                <label for="radio1">Radio 1</label>
+                <input id="radio2" type="radio" name="test" />
+                <label for="radio2">Radio 2</label><br />
+                <input type="submit" />
+            </form>
+            <pre class="prettyprint linenums lang-html">
+&lt;form action="#html-form" method="GET"&gt;
+    &lt;input type="text" name="txt" placeholder="Hello World" /&gt;
+    &lt;input type="checkbox" name="chk" checked="checked" /&gt;
+    &lt;select name="combo"&gt;
+        &lt;option value="1"&gt;Eins&lt;/option&gt;
+        &lt;option value="2"&gt;Zwei&lt;/option&gt;
+    &lt;/select&gt;&lt;br /&gt;
+    &lt;input id="radio1" type="radio" name="test" /&gt;
+    &lt;label for="radio1"&gt;Radio 1&lt;/label&gt;
+    &lt;input id="radio2" type="radio" name="test" /&gt;
+    &lt;label for="radio2"&gt;Radio 2&lt;/label&gt;&lt;br /&gt;
+    &lt;input type="submit" /&gt;
+&lt;/form&gt;
+</pre>
+    </div>
+    
+    <div id="html-escape-char" class="step slide" data-x="8000" data-y="3000" data-rotate="0">
     </div>
     
     <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="20">
