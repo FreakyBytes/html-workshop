@@ -1,0 +1,45 @@
+html, body {
+    background-color: #EEE;
+}
+header, footer {
+    background-color: #777;
+    color: #EEE;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+header a, footer a {
+    color: #EEEEFF;
+}
+
+a {
+    color: #0000FF;
+    text-decoration: underline;
+    font-weight: normal;
+}
+a:hover {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+div.par {
+    border-left: 20px solid #777;
+    background-color: #DDD;
+}
+div.par:first-of-type {
+    border-left-color: #77D;
+}
+
+
+h1, h2, h3 {
+    font-size: 3em;
+    font-family: Verdana, serif;
+    font-variant: small-caps;
+    color: #D00;
+}
+h2 {
+    font-size: 2em;
+}
+h3 {
+    font-size: 1.5em;
+}
+
