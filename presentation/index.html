@@ -427,7 +427,52 @@
     <div id="css-cascading" class="step slide" data-x="12000" data-y="4700" data-rotate="0">
         <h2>Cascading?</h2>
         <q>
+            <ul>
+                <li>CSS nutzt Regeln</li>
+                <li>HTML hat eine Baumstruktur</li>
+                <li>=> <i>Eigenschaften werden durch Kinder übernommen</i></li>
+                <li>Die Regel mit der Besten Beschreibung gewinnt</li>
+            </ul>
         </q>
+    </div>
+    
+    <div id="css-selector" class="step slide slim-slide" data-x="13000" data-y="4700" data-rotate="0">
+        <h2>Selektoren</h2>
+        <q>
+            HTML Tags: 
+            <pre class="prettyprint lang-css">html, body, head</pre>
+            Klassen: <pre style="display: inline;" class="prettyprint lang-html">&lt;div class="test"&gt;&lt;/div&gt;</pre>
+            <pre class="prettyprint lang-css">.style, div.test</pre>
+            IDs: <pre style="display: inline;" class="prettyprint lang-html">&lt;div id="content"&gt;&lt;/div&gt;</pre>
+            <pre class="prettyprint lang-css">#content, div#footer</pre>
+        </q>
+    </div>
+    
+    <div id="css-selector2" class="step slide slim-slide" data-x="14000" data-y="4700">
+        <h2>Selektoren 2</h2>
+        <q>
+            Link Zustände:
+            <pre class="prettyprint lang-css">a:active, :hover, :link, :visited</pre>
+            Vererbung:
+            <pre class="prettyprint lang-css">div p, div > p</pre>
+            Attribute:
+            <pre class="prettyprint lang-css">a[target="_blank"]</pre>
+            <!--Ausschluss:
+            <pre class="prettyprint lang-css">:not(.style)</pre> -->
+        </q>
+    </div>
+    
+    <div id="css-attr" class="step slide" data-x="14000" data-y="4700">
+        <h2>Attribute</h2>
+        <q>
+            <pre class="prettyprint lang-css">
+p.red, a {
+    color: red;
+}</pre>
+            <small>vgl. <a href="http://www.w3schools.com/cssref/default.asp" target="_blank">CSS Referenz</a></small>
+        <q>
+    </div>
+    
     
     <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="20">
     </div>

@@ -54,6 +54,9 @@ small, span.small {
 
     margin-top: 100px;
 }
+.slim-slide q {
+    margin-top: 36px;
+}
 
 .slide q strong {
     white-space: nowrap;
