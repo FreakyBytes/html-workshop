@@ -81,6 +81,41 @@ small, span.small {
     padding: 0;
 }
 
+.background {
+    z-index: 9999;
+    padding: 0;
+    background-color: rgba(100, 100, 100, 0.50);
+    opacity: 1;
+}
+.background:not(.active) {
+    opacity: 0;
+    display: none;
+}
+.background h1 {
+    font-size: 245px;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    
+    text-shadow: 0px 0px 100px #FFF;
+}
+.background h2 {
+    font-size: 185px;
+    font-weight: bold;
+    text-align: center;
+/*    white-space: nowrap;*/
+    
+    text-shadow: 0px 0px 100px #FFF;
+}
+
+h1 h, h2 h, h3 h, h4 h {
+    /* Highlight in Title */
+/*    font-variant: small-caps;*/
+    color: #000022;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: rgba(150, 150, 150, 0.8) solid 10px;
+}
+
 .img-slide {
     text-align: center;
 }

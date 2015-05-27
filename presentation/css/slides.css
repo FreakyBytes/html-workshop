@@ -15,7 +15,7 @@
     background-size: contain;
     height: 800px;
 }
-#html-friends:not(.active) {
+#html-friends.future {
     opacity: 0;
 }
 .impress-on-html-friends #html-title {
@@ -26,6 +26,9 @@
     opacity: 0;
 }
 
+#box-title h1 {
+/*    font-size: 145px;*/
+}
 
 /* overview step */
 
@@ -36,7 +39,7 @@
 
 /* on overview step everything is visible */
 
-.impress-on-overview .step {
+.impress-on-overview .step:not(.background), .impress-on-tut-1 .step:not(.future) {
     opacity: 1;
     cursor: pointer;
 }
