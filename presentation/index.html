@@ -550,11 +550,103 @@ body {
         <a href="http://www.w3schools.com/css/css_boxmodel.asp" target="_blank">www.w3schools.com/css/css_boxmodel.asp</a>
     </div>
     
-    <div id="box-widths" class="step slide" data-x="11500" data-y="9000" data-rotate="180">
+    <div id="box-math" class="step slide slim-slide" data-x="11500" data-y="9000" data-rotate="180">
+        <h2>Let's do the math!</h2>
+            <pre class="prettyprint lang-css">
+div.test {
+    width: 150px;
+    height: 10em;
+    margin: 10px;
+    padding: 5px 3px;
+    border: #F00 solid 4px;
+}
+</pre>
+            <div style="margin-top: 32px;">
+            </div>
+            <div class="left-side hidden">
+                <b>Breite</b>
+                150px <br />+ 6px padding<br />+ 8px border<br />+ 20px margin<br /> = <u>184px</u>
+            </div>
+            <div class="right-side hidden">
+                <b>Höhe</b>
+                10em = 120px <br />+ 10px padding<br />+8px border<br />+20px margin<br /> = <u>158px</u>
+            </div>
+            <div class="clear"></div>
+    </div>
+    <div id="box-math2" class="step" data-x="11500" data-y="9000" data-rotate="180"></div>
+    
+    <div id="box-widths" class="step slide slim-slide" data-x="10500" data-y="9000" data-rotate="180">
         <h2>50% von was?</h2>
         <q>
-            TODO
+            <ul>
+                <li>Prozentangaben sind gefährlich!</li>
+                <li>Bezugspunkt ist Eltern-Element,<br />wenn es absolute Angabe hat.</li>
+                <li>Grundsätzlich gilt: <br /><i>Höhe wächst mit</i></li>
+                <li>Kombination von Einheiten<br /><pre class="prettyprint lang-css">width: calc(50% - 10px);</li>
+            </ul>
         </q>
+    </div>
+    
+    <div id="box-floating-start" class="step slide" data-x="9500" data-y="9000" data-rotate="180"> 
+        <h2>Wozu?</h2>
+        <q>
+            Reicht doch wenn es so schön untereinander steht...
+            <div class="hidden">
+                Nunja...
+            </div>
+        </q>
+    </div>
+    <div id="box-floating-start2" class="step" data-x="9500" data-y="9000" data-rotate="180" data-scale="1">
+    </div>
+    
+    <div id="box-floating" class="step slide" data-x="9500" data-y="8000" data-rotate="270">
+        <h2>Floating</h2>
+        <div class="left-side">
+            <pre class="prettyprint lang-css">float: left;</pre>
+        </div>
+        <div class="left-side">
+            <pre class="prettyprint lang-css">float: left;</pre>
+        </div>
+        <div class="right-side">
+            <pre class="prettyprint lang-css">float: right;</pre>
+        </div>
+        <div class="right-side">
+            <pre class="prettyprint lang-css">float: right;</pre>
+        </div>
+        <div class="clear">
+            <pre class="prettyprint lang-css">clear: both;</pre>
+        </div>
+    </div>
+    
+    <div id="box-floating2" class="step slide" data-x="9500" data-y="7000" data-rotate="270">
+        <h2>Floating 2</h2>
+        <div class="left-side">
+            <pre class="prettyprint lang-css">float: left; <br />width: calc(50% - 26px);</pre>
+        </div>
+        <div class="right-side">
+            <pre class="prettyprint lang-css">float: right; <br />width: calc(50% - 26px);</pre>
+        </div>
+        <div class="clear">
+            <pre class="prettyprint lang-css">clear: both;</pre>
+        </div>
+    </div>
+    
+    <div id="box-floating3" class="step slide" data-x="9500" data-y="6000" data-rotate="270">
+        <h2>Floating 3</h2>
+        <div class="left-side">
+            <pre class="prettyprint lang-css">float: left; <br />width:<br />calc(30%-26px);</pre>
+        </div>
+        <div class="left-side">
+            <pre class="prettyprint lang-css">float: left; <br />min-width: calc(70% - 26px);</pre>
+        </div>
+        <div class="clear">
+            <pre class="prettyprint lang-css">clear: both;</pre>
+        </div>
+    </div>
+    
+    <div id="tut-2" class="step background" data-x="9500" data-y="6000" data-scale="15" data-rotate="270">
+        <h1>Übung 2</h1>
+        <h2>Das erste Box Layout</h2>
     </div>
     
     <div id="overview" class="step" data-x="6000" data-y="1500" data-scale="20">
