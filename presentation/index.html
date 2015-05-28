@@ -649,6 +649,79 @@ div.test {
         <h2>Das erste Box Layout</h2>
     </div>
     
+    <div id="jq-title" class="step title" data-x="2000" data-y="9500" data-scale="3" data-rotate="180">
+<!--        <h1>jQuery</h1>-->
+        <h1><img src="img/jQuery-Logo.png" alt="jQuery" height="185" /></h1>
+        <p>More like</p>
+        <h2>Write less. Do magic.</h2>
+    </div>
+    
+    <div id="jq-about" class="step slide" data-x="000" data-y="12000">
+        <h2>Was ist jQuery</h2>
+        <q>
+            <ul>
+                <li>JavaScript Bibliothek</li>
+                <li>Angleichung von Browsern</li>
+                <li>Vereinfachung der Syntax</li>
+            </ul>
+        </q>
+    </div>
+    
+    <div id="jq-start" class="step slide slim-slide" data-x="1000" data-y="12000">
+        <h2>Wie starten?</h2>
+        <q>
+<pre class="prettyprint lang-html">
+&lt;script src="jquery.min.js"&gt;&lt;/script&gt;
+&lt;script src="your-code.js"&gt;&lt;/script&gt;
+</pre><br />
+<pre class="prettyprint lang-js">
+$(document).ready(function () {
+    /* your stuff here */
+});
+</pre>
+            <small><a href="http://api.jquery.com/" target="_blank">jQuery Referenz</a></small>
+        </q>
+    </div>
+    
+    <div id="jq-select" class="step slide" data-x="2000" data-y="12000">
+        <h2>Selektoren</h2>
+        <q>
+            Identisch mit CSS!
+            <pre class="prettyprint lang-js">
+$("div");
+$("p:first");
+</pre>
+        </q>
+    </div>
+    
+    <div id="jq-act" class="step slide" data-x="3000" data-y="12000">
+        <h2>Actoren</h2>
+        <q>
+            <pre class="prettyprint lang-js">
+$("p:first").css("color", "#FF0000");
+$(":submit").click();
+</pre>
+        </q>
+    </div>
+    
+    <div id="jq-event" class="step slide" data-x="4000" data-y="12000">
+        <h2>Events</h2>
+        <q>
+            <pre class="prettyprint lang-js">
+$("a:odd").click(function () {
+    console.log("Link disabled");
+    $(this).hide();
+    return false;
+});
+</pre>
+        </q>
+    </div>
+    
+    <div id="tut-3" class="step background" data-x="4000" data-y="12000" data-scale="15" data-rotate="0">
+        <h1>Übung 3</h1>
+        <h2>And Action</h2>
+    </div>
+    
     <div id="overview" class="step" data-x="6000" data-y="1500" data-scale="20">
     </div>
 </div>
