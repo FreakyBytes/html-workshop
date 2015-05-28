@@ -61,7 +61,7 @@ div.nav {
     float: left;
 }
 div.content {
-    max-width: calc(67% - 10px);
+    width: calc(67% - 10px);
     padding: 5px;
     float: left;
 }
@@ -87,5 +87,11 @@ img.par-img {
     margin: 8px;
     vertical-align: middle;
     text-align: center;
+}
+
+/* ---- */
+a.col-link, a.exp-link {
+    display: none;
+    color: #F00;
 }
 
