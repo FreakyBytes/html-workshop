@@ -1,0 +1,91 @@
+html, body {
+    background-color: #EEE;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+}
+header, footer {
+    background-color: #777;
+    color: #EEE;
+    font-weight: bold;
+    font-size: 1.3em;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+header a, footer a {
+    color: #EEEEFF;
+}
+header h1 {
+    font-size: 145px;
+    font-variant: small-caps;
+    color: #900;
+    text-shadow: 3px 3px 2px #AAA;
+    
+    padding: 10px;
+    margin: 0;
+}
+h1, h2, h3 {
+    font-size: 3em;
+    font-family: Verdana, serif;
+    font-variant: small-caps;
+    color: #D00;
+    margin-top: 0;
+    padding-top: 5px;
+}
+h2 {
+    font-size: 2em;
+}
+h3 {
+    font-size: 1.5em;
+}
+
+a {
+    color: #0000FF;
+    text-decoration: underline;
+    font-weight: normal;
+}
+a:hover {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+div.main {
+    width: 100%;
+    margin-top: 32px;
+}
+div.nav {
+    width: calc(33% - 15px);
+    padding: 10px 5px;
+    float: left;
+}
+div.content {
+    max-width: calc(67% - 10px);
+    padding: 5px;
+    float: left;
+}
+div.clear-l {
+    clear: left;
+}
+
+div.par {
+    border-left: 20px solid #777;
+    background-color: #DDD;
+    padding: 3px 8px;
+    margin: 0 0 10px 0;
+}
+div.par:first-of-type {
+    border-left-color: #77D;
+}
+div.par-img {
+    float: left;
+}
+img.par-img {
+    height: 5em;
+    float: left;
+    margin: 8px;
+    vertical-align: middle;
+    text-align: center;
+}
+
